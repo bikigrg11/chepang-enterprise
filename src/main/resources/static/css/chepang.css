@@ -1,0 +1,36 @@
+.product_view .modal-dialog{max-width: 800px; width: 100%;}
+.pre-cost{text-decoration: line-through; color: #a5a5a5;}
+.space-ten{padding: 10px 0;}
+
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jumbotron-color{
+    background-color: rgba(4, 3, 7, 0.96);
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.logo-image{
+    background-image: url("/media/images/khukuri_logo.png");
+}
+
+.font-heading{
+    font-family:'Almendra Display';
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
