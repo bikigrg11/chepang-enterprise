@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/signin.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <title>Title</title>
 
 </head>
@@ -17,10 +18,10 @@
     <div class="font-heading">Chepang Enterprise</div>
 
     <div class="container-fluid">
-        <form action="" method="" class="register-form">
+        <form th:action="@{/login}" method="POST" class="register-form">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-lg-4">
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
                 </div>
             </div>
             <div class="row">
@@ -43,6 +44,4 @@
     </div>
 </div>
 </body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
 </html>
