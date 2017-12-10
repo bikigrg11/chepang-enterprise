@@ -1,16 +1,47 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Index Page for Web Application </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/signin.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <title>Chepang Login Page</title>
+
 </head>
+
 <body>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Astloch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
 
-    <h1>Click here to Sign Up  <a href="/signup.html">here</a></h1>
-    <h1>Click here to login    <a href="/login.html">here</a></h1>
-    <h1>Click here to go to Chepang Page <a href="/chepang.html">here</a></h1>
-
-<p>Get your greeting <a href="/greeting">here</a></p>
+<div class="container">
+    <br>
+    <br>
+    <div class="font-heading">Chepang Enterprise</div>
+    <div class="container-fluid">
+        <form action="/signin" method="POST" class="register-form">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4">
+                    <input type="text" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4">
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <div class="row" align="center">
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                    <button class="btn btn-default regbutton" onclick=" window.location.href = 'signup.html'">Register</button>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                    <button class="btn btn-default logbutton">Log In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>

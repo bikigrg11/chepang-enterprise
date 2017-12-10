@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <title>Chepang Enterprise</title>
     <meta charset="utf-8">
@@ -8,25 +8,12 @@
     <link href='https://fonts.googleapis.com/css?family=Astloch' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
     <div class="text-center jumbotron-color">
             <img src="https://f4.bcbits.com/img/0011202024_100.png" >
-
-           <!--<div class="row">-->
-               <!--<h1 class="font-heading" align="center">CHEPANG</h1>-->
-                <!---->
-               <!---->
-               <!--&lt;!&ndash;<div align="right">&ndash;&gt;-->
-                   <!--&lt;!&ndash;<img src="../media/images/khukuri_logo.png" />&ndash;&gt;-->
-               <!--&lt;!&ndash;</div>&ndash;&gt;-->
-           <!--</div>-->
-
-            <!-- <p>Mission, Vission & Values</p> -->
-        </div>
+    </div>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -47,8 +34,8 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    <li ><a id="chepanglogout"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
+                    <li><a  id="chepangCartDisplay"><span class="active glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
                 </ul>
             </div>
         </div>
@@ -58,9 +45,9 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <img src="http://www.doseofmetal.com/wp-content/uploads/2011/10/giveaway.jpg" alt="" class="img-responsive">
+                    <img src="https://f4.bcbits.com/img/0011017987_10.jpg" alt="" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">$50.99</h4>
+                        <h4 class="pull-right">$45.00</h4>
                         <h4><a href="#">Death Grip T-Shirts</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -76,7 +63,7 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=1&price=100">Add Item</a></h4>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#death_grip_T"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
@@ -84,9 +71,9 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <img src="https://f4.bcbits.com/img/a0088558089_10.jpg" alt="" class="img-responsive">
+                    <img src="https://f4.bcbits.com/img/a1664320049_10.jpg" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">60.00</h4>
+                        <h4 class="pull-right">80.00</h4>
                         <h4><a href="#">Dadhelo Album Cover T-Shirts</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -102,7 +89,9 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=2&price=810">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Dadhelo_T_Shirts"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
@@ -110,9 +99,9 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <img src="https://f4.bcbits.com/img/a1664320049_10.jpg" alt="" class="img-responsive">
+                    <img src="http://www.doseofmetal.com/wp-content/uploads/2011/10/giveaway.jpg" alt="" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">$30.99</h4>
+                        <h4 class="pull-right">$77.00</h4>
                         <h4><a href=  "#">Lathi Charge Vinyl</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -128,8 +117,10 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Lathi_charge_CD"><i class="fa fa-search"></i> Quick View</button>
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=3&price=97">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#death_grip_T"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
                 </div>
@@ -143,7 +134,7 @@
                 <div class="thumbnail">
                     <img src="https://f4.bcbits.com/img/0011017987_10.jpg" alt="" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">$50.99</h4>
+                        <h4 class="pull-right">$50.00</h4>
                         <h4><a href="#">Death Grip T-Shirts</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -159,7 +150,9 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=4&price=50">Add Item</a></h4>
+                        <!--<button type="button" class="btn btn-primary" href="/itemadded"><i class="fa fa-shopping-cart"></i> Add item</button>-->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#death_grip_T"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
@@ -169,7 +162,7 @@
                 <div class="thumbnail">
                     <img src="https://f4.bcbits.com/img/0009406855_10.jpg" alt="" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">60.00</h4>
+                        <h4 class="pull-right">$60.00</h4>
                         <h4><a href="#">Dadhelo Album Cover T-Shirts</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -185,7 +178,9 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <h4><a  class ="chepang_item_add" href="/testpages?item_id=5&price=60">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Dadhelo_T_Shirts"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
@@ -195,7 +190,7 @@
                 <div class="thumbnail">
                     <img src="http://blowthescene.com/wp-content/uploads/2017/04/succumb-590x590.jpg" alt="" class="img-responsive">
                     <div class="caption">
-                        <h4 class="pull-right">$30.99</h4>
+                        <h4 class="pull-right">$77.00</h4>
                         <h4><a href=  "#">Lathi Charge Vinyl</a></h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -211,8 +206,100 @@
                     </div>
                     <div class="space-ten"></div>
                     <div class="btn-ground text-center">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=6&price=77">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Lathi_charge_CD"><i class="fa fa-search"></i> Quick View</button>
+                    </div>
+                    <div class="space-ten"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="https://f4.bcbits.com/img/0011017987_10.jpg" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h4 class="pull-right">$45.00</h4>
+                        <h4><a href="#">Death Grip T-Shirts</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="ratings">
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            (15 reviews)
+                        </p>
+                    </div>
+                    <div class="space-ten"></div>
+                    <div class="btn-ground text-center">
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=7&price=100">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#death_grip_T"><i class="fa fa-search"></i> Quick View</button>
+                    </div>
+                    <div class="space-ten"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="https://f4.bcbits.com/img/0009406855_10.jpg" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h4 class="pull-right">80.00</h4>
+                        <h4><a href="#">Dadhelo Album Cover T-Shirts</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="ratings">
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            (15 reviews)
+                        </p>
+                    </div>
+                    <div class="space-ten"></div>
+                    <div class="btn-ground text-center">
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=8&price=810">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Dadhelo_T_Shirts"><i class="fa fa-search"></i> Quick View</button>
+                    </div>
+                    <div class="space-ten"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://www.doseofmetal.com/wp-content/uploads/2011/10/giveaway.jpg" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h4 class="pull-right">$77.00</h4>
+                        <h4><a href=  "#">Lathi Charge Vinyl</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="ratings">
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            (15 reviews)
+                        </p>
+                    </div>
+                    <div class="space-ten"></div>
+                    <div class="btn-ground text-center">
+                        <h4><a class ="chepang_item_add" href="/testpages?item_id=9&price=97">Add Item</a></h4>
+
+                        <!--<button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#death_grip_T"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="space-ten"></div>
                 </div>
@@ -471,6 +558,9 @@
         <button type="button" class="btn btn-danger">Sign Up</button>
     </form>
 </footer>
-
+    <script type="text/javascript" src="/js/chepang.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

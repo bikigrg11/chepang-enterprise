@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chepang Enterprise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/chepang.css">
+    <link href='https://fonts.googleapis.com/css?family=Astloch' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="text-center jumbotron-color">
+    <img src="https://f4.bcbits.com/img/0011202024_100.png" >
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/adminpage">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a><span class="glyphicon glyphicon-user"></span>Admin</a></li>
+                <li><a href="/"><span class="glyphicon glyphicon-shopping-cart"></span>Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class="text-center">Welcome Admin to Chepang Store</h2>
+    <br>
+    <form class="form-horizontal" action="/deleteItem" autocomplete="off" method="POST" >
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>DELETE OLD PRODUCT PAGE</legend>
+
+            <!-- PRODUCT ID-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>
+                <div class="col-md-4">
+                    <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- PRODUCT NAME-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>
+                <div class="col-md-4">
+                    <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" >DELETE ITEM: </label>
+                    <!-- Button -->
+                        <!--<label class="col-md-4 control-label" for="singlebutton">D Item</label>-->
+                        <div class="col-md-4">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">SUBMIT</button>
+                        </div>
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+</div>
+
+<script type="text/javascript" src="js/chepang.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
